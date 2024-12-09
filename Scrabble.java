@@ -110,7 +110,7 @@ public class Scrabble {
 				break;
 			}
 			if(MyString.subsetOf(input, hand) && isWordInDictionary(input)){
-				scorenow = Scrabble.wordScore(hand);
+				scorenow = Scrabble.wordScore(input);
 				score +=scorenow;
 				hand = MyString.remove(hand, input);
 				HAND_SIZE -=input.length();		
@@ -153,6 +153,7 @@ public class Scrabble {
 
 	public static void main(String[] args) {
 		//// Uncomment the test you want to run
+		System.out.println(wordScore("train"));
 		////testBuildingTheDictionary();  
 		////testScrabbleScore();    
 		////testCreateHands();  
