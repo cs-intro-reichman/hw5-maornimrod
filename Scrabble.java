@@ -115,6 +115,7 @@ public class Scrabble {
 				hand = MyString.remove(hand, input);
 				HAND_SIZE -=input.length();		
 				System.out.println(input + " earned " + scorenow + " points. Score: " +score + " points.");
+				System.out.println();
 			}
 			else if(!isWordInDictionary(input)){
 				System.out.println("Invalid word. Try again.");
