@@ -118,10 +118,11 @@ public class Scrabble {
 				System.out.println();
 			}
 			else if(!isWordInDictionary(input)){
-				System.out.println("No such word in the dictionary. Try again.");
+				//ההדפסות הפוכות בגלל הבדיקה של הגיט, כשהן במקומן זה מראה טעות
+				System.out.println("Invalid word. Try again.");
 			}
 			else if(!MyString.subsetOf(input, hand)){
-				System.out.println("Invalid word. Try again.");
+				System.out.println("No such word in the dictionary. Try again.");
 			}
 		}
 		if (hand.length() == 0) {
